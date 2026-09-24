@@ -16,3 +16,12 @@ export interface CreateAccountDomain {
   password: string;
   userImage: string;
 }
+
+export interface UserSessionDomain {
+  id: number;
+  createdAt: string;
+  updatedAt: string;
+  firstName: string;
+  lastName: string;
+  userImage: string;
+}

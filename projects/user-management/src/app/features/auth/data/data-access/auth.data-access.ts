@@ -1,7 +1,7 @@
 import { inject, Injectable } from '@angular/core';
 import { map, Observable } from 'rxjs';
 import { AuthApi } from '../api/auth.api';
-import { CreateAccountDomain, LoginDomain, LoginResponse } from '../../models/domain/auth.domain';
+import { CreateAccountDomain, LoginDomain, LoginResponse, UserSessionDomain } from '../../models/domain/auth.domain';
 
 @Injectable({
   providedIn: 'root',
@@ -19,5 +19,17 @@ export class AuthDataAccess {
 
   confirmEmail(publicId: string): Observable<string> {
     return this.api.confirmEmail(publicId);
+  }
+
+  getUserSession(): Observable<UserSessionDomain> {
+    return this.api.getUserSession();
+  }
+
+  refreshToken(refreshToken: string): Observable<LoginResponse> {
+    return this.api.refreshToken(refreshToken);
+  }
+
+  logout(refreshToken: string): Observable<string> {
+    return this.api.logout(refreshToken);
   }
 }

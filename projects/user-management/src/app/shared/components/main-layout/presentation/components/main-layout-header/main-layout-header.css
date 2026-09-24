@@ -82,7 +82,7 @@ icon-user {
 .header-controls {
     display: flex;
     align-items: center;
-    gap: 24px;
+    gap: 9px;
 }
 
 .header-navigation {

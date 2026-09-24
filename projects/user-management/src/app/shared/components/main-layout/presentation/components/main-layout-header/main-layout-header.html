@@ -4,17 +4,22 @@
     <!-- Brand Logo & Name -->
     <div class="brand-logo" data-purpose="brand-logo">
       <div class="brand-icon">E</div>
-        <span class="brand-name"> ERP System </span>
+      <span class="brand-name"> ERP SYSTEM </span>
     </div>
 
     <!-- Quick Header Navigation & Controls -->
     <div class="header-controls">
       <nav class="header-navigation">
+        @if (session(); as user) {
+          <div>
+            <span>Hello {{ user.firstName }}!</span>
+          </div>
+        }
+      </nav>
+      <nav class="header-navigation">
         <div class="icon-user" (click)="profileSettings()">
           <icon-user size="xs"></icon-user>
         </div>
-
-        <!-- <p (click)="logout()">Logout</p> -->
       </nav>
     </div>
   </div>

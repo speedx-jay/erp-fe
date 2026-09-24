@@ -35,3 +35,10 @@ purchasing
 reports
 sales
 
+# Interceptors 
+1. handle unauthorized error
+   add 401-unauthorized.interceptors.ts and call it on app.config.ts
+   to renew refreshToken
+   
+2. handle global data
+
