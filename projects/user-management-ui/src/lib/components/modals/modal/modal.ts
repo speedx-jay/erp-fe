@@ -3,7 +3,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { AknErpModalSize, AknErpModalPosition } from '../../../exports';
 
 @Component({
-  selector: 'akn-modal',
+  selector: 'modal',
   standalone: true,
   imports: [CommonModule, NgClass],
   templateUrl: './modal.html',
