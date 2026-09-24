@@ -1,0 +1,12 @@
+.modal-menu-body {
+    height: 10em;
+    margin: 1em;
+}
+
+.modal-menu-body span {
+    cursor: pointer;
+}
+
+.modal-menu-body span:hover {
+    opacity: 0.6;
+}

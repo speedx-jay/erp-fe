@@ -1,5 +1,22 @@
 <akn-erp-layout-main>
-    <app-main-layout-header layout-header></app-main-layout-header>
-    <!-- <app-auth-layout-footer layout-footer></app-auth-layout-footer> -->
+  <app-main-layout-header
+    layout-header
+    (openModalSettings)="profileSettings()"
+  ></app-main-layout-header>
+  <!-- <app-auth-layout-footer layout-footer></app-auth-layout-footer> -->
 </akn-erp-layout-main>
 
+<modal
+  class="modal-section-settings"
+  title="Profile Settings"
+  [isOpen]="isOpen"
+  (closeRequested)="closeAppMenu()"
+>
+  <div class="modal-menu-body" aknErpAppMenuMain>
+    <span (click)="logout()"> Logout </span>
+  </div>
+
+  <div aknErpAppMenuFooter>
+     <span label> Close </span>
+  </div>
+</modal>

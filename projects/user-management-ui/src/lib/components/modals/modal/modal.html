@@ -1,0 +1,41 @@
+@if (isOpen) {
+  <div
+    class="akn-erp-app-menu"
+    [ngClass]="'akn-erp-app-menu-position-' + modalPosition.toLowerCase()"
+  >
+    <div class="akn-erp-app-menu__overlay" role="presentation" (click)="onOverlayClick()"></div>
+
+    <section
+      class="akn-erp-app-menu__modal akn-erp-popup-menu"
+      [ngClass]="'akn-erp-app-menu-size-' + modalSize.toLowerCase()"
+      role="dialog"
+      aria-modal="true"
+      [attr.aria-label]="title"
+      (click)="onMenuClick($event)"
+    >
+      @if (showHeader) {
+        <header class="akn-erp-app-menu__header akn-erp-popup-menu__header">
+          <h2 class="akn-erp-app-menu__title">
+            {{ title }}
+          </h2>
+
+          <button
+            class="akn-erp-app-menu__close"
+            type="button"
+            aria-label="Close application menu"
+            (click)="close()"
+          >
+            <span aria-hidden="true"> &times; </span>
+          </button>
+        </header>
+      }
+      <ng-content select="[aknErpAppMenuMain]"></ng-content>
+
+      @if (showFooter) {
+        <footer class="akn-erp-app-menu__footer akn-erp-popup-menu__footer">
+          <ng-content select="[aknErpAppMenuFooter]"></ng-content>
+        </footer>
+      }
+    </section>
+  </div>
+}

@@ -9,7 +9,11 @@
     <!-- Quick Header Navigation & Controls -->
     <div class="header-controls">
       <nav class="header-navigation">
-        <p (click)="logout()">Logout</p>
+        <div class="icon-user" (click)="profileSettings()">
+          <icon-user size="xs"></icon-user>
+        </div>
+
+        <!-- <p (click)="logout()">Logout</p> -->
       </nav>
     </div>
   </div>

@@ -1,0 +1,239 @@
+:host {
+  display: contents;
+}
+
+/* ========================================
+   App Menu Container
+   ======================================== */
+
+.akn-erp-app-menu {
+  position: absolute;
+  inset: 0;
+  z-index: 1000;
+}
+
+/* ========================================
+   Overlay
+   ======================================== */
+
+.akn-erp-app-menu__overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  inset: 0;
+
+  background: var(--color-overlay-medium);
+
+  animation: akn-erp-app-menu-fade-in .15s ease-out;
+}
+
+/* ========================================
+   Sizes
+   ======================================== */
+
+.akn-erp-app-menu-size-xs {
+  max-width: 18.5rem;
+  width: 18.5rem;
+}
+
+.akn-erp-app-menu-size-sm {
+  max-width: 25rem;
+  width: 25rem;
+}
+
+.akn-erp-app-menu-size-md {
+  max-width: 35rem;
+  width: 35rem;
+}
+
+.akn-erp-app-menu-size-lg {
+  max-width: 50rem;
+  width: 50rem;
+}
+
+.akn-erp-app-menu-size-xl {
+  max-width: 68.75rem;
+  width: 68.75rem;
+}
+
+.akn-erp-app-menu-size-full {
+  max-width: 100vw;
+  width: 100vw;
+}
+
+/* ========================================
+   Center Modal
+   ======================================== */
+
+.akn-erp-app-menu-position-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.akn-erp-app-menu-position-center .akn-erp-app-menu__modal {
+  --modal-position: relative;
+  top: auto;
+  background: #ffffff !important;
+}
+
+/* ========================================
+   Modal
+   ======================================== */
+.akn-erp-app-menu__modal {
+  z-index: 9;
+  position: var(--modal-position);
+  top: calc(var(--modal-header-height));
+  right: var(--modal-position-popupmenu-right);
+
+  display: flex;
+  flex-direction: column;
+
+  max-width: calc(100vw - 2rem);
+  max-height: calc(100dvh - var(--header-height) - 2rem);
+
+  overflow: hidden;
+
+  background: var(--grey-02);
+
+  border: var(--width-line-04) solid var(--color-popupmenu-border);
+
+  border-radius: var(--radius-lg);
+
+  box-shadow: var(--shadow-lg);
+
+  animation: akn-erp-app-menu-slide-in .18s ease-out;
+}
+
+/* ========================================
+   Header
+   ======================================== */
+
+.akn-erp-app-menu__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 1rem;
+
+  padding: 0.5rem 1rem;
+
+  border-bottom: var(--width-line-04) solid var(--color-divider-primary);
+  background-color: var(--modal-background-header);
+}
+
+.akn-erp-app-menu__title {
+  margin: 0;
+
+  color: var(--modal-color-text);
+
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* ========================================
+   Close Button
+   ======================================== */
+
+.akn-erp-app-menu__close {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 2rem;
+  height: 2rem;
+
+  padding: 0;
+
+  color: var(--color-text-secondary);
+
+  background: transparent;
+
+  border: none;
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  transition:
+    background .2s,
+    color .2s;
+}
+
+.akn-erp-app-menu__close:hover {
+  color: var(--color-text-primary);
+
+  background: var(--color-hover-background);
+}
+
+.akn-erp-app-menu__close:focus-visible {
+  outline: var(--width-line-08) solid var(--color-focus-border);
+
+  outline-offset: 2px;
+}
+
+.akn-erp-app-menu__close span {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+/* ========================================
+   Body
+   ======================================== */
+
+
+/* ========================================
+   Projected Icons
+   ======================================== */
+
+.akn-erp-app-menu__body ::ng-deep .app-icon {
+  display: flex;
+  justify-content: center;
+}
+
+/* ========================================
+   Footer
+   ======================================== */
+
+.akn-erp-app-menu__footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  gap: .75rem;
+
+  padding: .5rem 1rem;
+
+  border-top: var(--width-line-04) solid var(--color-divider-primary);
+
+  background: var(--color-surface-secondary);
+}
+
+/* ========================================
+   Animations
+   ======================================== */
+
+@keyframes akn-erp-app-menu-fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes akn-erp-app-menu-slide-in {
+  from {
+    opacity: 0;
+
+    transform:
+      translateY(-.5rem) scale(.98);
+  }
+
+  to {
+    opacity: 1;
+
+    transform:
+      translateY(0) scale(1);
+  }
+}

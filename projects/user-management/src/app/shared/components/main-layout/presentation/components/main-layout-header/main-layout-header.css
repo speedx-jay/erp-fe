@@ -1,3 +1,19 @@
+.icon-user {
+    border: 2px solid #ffffff;
+    padding: 7px;
+    border-radius: 50%;
+}
+
+.icon-user:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+icon-user {
+    --icon-fill: white;
+    display: flex;
+}
+
 /* ========================================
    Main Header
    ======================================== */
