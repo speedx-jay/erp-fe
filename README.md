@@ -1,15 +1,11 @@
 
 # ErpFe
-
 create this project: ng new my-project 
 create new application: ng generate application user-management
 create library: ng generate library user-management-ui
 
 
-
-
 # GitHub Repository Setup & Initial Push
-
 1. Initial Push
 git init
 git remote -v
@@ -26,4 +22,16 @@ git pull
 git add .
 git commit -m "initialize ERP frontent"
 git push -u origin main(if encounter error run this "git pull --rebase origin main" then push again)
+
+
+# Project Module
+user-management
+dashboard
+accounting
+administration
+human-resources
+inventory
+purchasing
+reports
+sales
 
