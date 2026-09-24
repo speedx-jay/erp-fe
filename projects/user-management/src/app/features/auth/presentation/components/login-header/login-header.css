@@ -1,0 +1,8 @@
+.akn-login-header {
+  padding-block: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

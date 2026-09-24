@@ -1,0 +1,200 @@
+.theme-gold {
+
+    /* auth-layout */
+    --auth-header-height: 80px;
+    --auth-footer-height: 75px;
+
+    /*--auth-background-color-header: var(--gold-05); */
+    --auth-background-color-header: #48a1c1;
+    --auth-background-color-main: var(--grey-01);
+    --auth-background-color-footer: var(--grey-08);
+
+
+    /* main-layout */
+    --main-header-height: 80px;
+    --main-footer-height: 75px;
+
+    --main-background-color-header: #48a1c1;
+    --main-background-color-main: var(--grey-01);
+    --main-background-color-footer: var(--grey-08);
+
+    /* Badge */
+    --badge-background-color-new: var(--red-06);
+    --badge-background-color-completed: var(--grey-05);
+    --badge-background-color-pending: var(--blue-05);
+
+    --badge-color-text-new: var(--grey-10);
+    --badge-color-text-pending: var(--grey-10);
+    --badge-color-text-completed: var(--grey-00);
+
+    --badge-padding-inline: 10px;
+
+    /* Modal */
+    --modal-padding: 2rem;
+    --modal-body-height: auto;
+    --modal-position-popupmenu-right: 0;
+    --modal-position: absolute;
+    --modal-header-height: 52px;
+    --modal-background-header: var(--grey-00);
+    --modal-color-text: var(--grey-10);
+
+    /* Icon */
+    --icon-stroke-width: var(--width-line-08);
+    --icon-fill: var(--grey-10);
+
+    /* BUTTON BASE */
+    --button-min-height: 40px;
+    --button-min-width: 76px;
+    --button-padding-inline: 12px;
+
+    /* Button(Disabled) */
+    --button-color-disabled-text: var(--grey-06);
+    --button-color-disabled-icon: var(--grey-06);
+    --button-color-disabled-background: var(--grey-02);
+    --button-color-disabled-border: var(--grey-03);
+
+    /* PRIMARY(Main actions) */
+    --button-color-primary-text: var(--grey-00);
+    --button-color-primary-icon: var(--grey-00);
+    --button-color-primary-background: var(--grey-10);
+    --button-color-primary-border: var(--grey-10);
+
+    --button-color-primary-hover-text: var(--grey-00);
+    --button-color-primary-hover-icon: var(--grey-00);
+    --button-color-primary-hover-background: var(--grey-09);
+    --button-color-primary-hover-border: var(--grey-09);
+
+    --button-color-primary-active-text: var(--grey-00);
+    --button-color-primary-active-icon: var(--grey-00);
+    --button-color-primary-active-background: var(--grey-08);
+    --button-color-primary-active-border: var(--grey-08);
+
+    /* SECONDARY(Alternative actions) */
+    --button-color-secondary-text: var(--grey-10);
+    --button-color-secondary-icon: var(--grey-10);
+    --button-color-secondary-background: var(--grey-02);
+    --button-color-secondary-border: var(--grey-03);
+
+    --button-color-secondary-hover-text: var(--grey-10);
+    --button-color-secondary-hover-icon: var(--grey-10);
+    --button-color-secondary-hover-background: var(--grey-03);
+    --button-color-secondary-hover-border: var(--grey-04);
+
+    --button-color-secondary-active-text: var(--grey-10);
+    --button-color-secondary-active-icon: var(--grey-10);
+    --button-color-secondary-active-background: var(--grey-04);
+    --button-color-secondary-active-border: var(--grey-05);
+
+    /* GHOST(Low-emphasis actions) */
+    --button-color-ghost-text: var(--grey-10);
+    --button-color-ghost-icon: var(--grey-10);
+    --button-color-ghost-background: transparent;
+    --button-color-ghost-border: transparent;
+
+    --button-color-ghost-hover-text: var(--grey-10);
+    --button-color-ghost-hover-icon: var(--grey-10);
+    --button-color-ghost-hover-background: var(--grey-01);
+    --button-color-ghost-hover-border: transparent;
+
+    --button-color-ghost-active-text: var(--grey-10);
+    --button-color-ghost-active-icon: var(--grey-10);
+    --button-color-ghost-active-background: var(--grey-02);
+    --button-color-ghost-active-border: transparent;
+
+    /* WARNING(Cautionary actions) */
+    --button-color-warning-text: var(--grey-10);
+    --button-color-warning-icon: var(--grey-10);
+    --button-color-warning-background: var(--grey-06);
+    --button-color-warning-border: var(--grey-06);
+
+    --button-color-warning-hover-text: var(--grey-00);
+    --button-color-warning-hover-icon: var(--grey-00);
+    --button-color-warning-hover-background: var(--grey-07);
+    --button-color-warning-hover-border: var(--grey-07);
+
+    --button-color-warning-active-text: var(--grey-00);
+    --button-color-warning-active-icon: var(--grey-00);
+    --button-color-warning-active-background: var(--grey-08);
+    --button-color-warning-active-border: var(--grey-08);
+
+    /* DANGER(Destructive actions) */
+    --button-color-danger-text: var(--grey-00);
+    --button-color-danger-icon: var(--grey-00);
+    --button-color-danger-background: var(--grey-08);
+    --button-color-danger-border: var(--grey-08);
+
+    --button-color-danger-hover-text: var(--grey-00);
+    --button-color-danger-hover-icon: var(--grey-00);
+    --button-color-danger-hover-background: var(--grey-09);
+    --button-color-danger-hover-border: var(--grey-09);
+
+    --button-color-danger-active-text: var(--grey-00);
+    --button-color-danger-active-icon: var(--grey-00);
+    --button-color-danger-active-background: var(--grey-10);
+    --button-color-danger-active-border: var(--grey-10);
+
+    /* Select input */
+    --select-input-height: auto;
+    --select-input-background: #dcdcdc;
+
+    /* Input */
+    --input-border-top-left-radius: 0;
+    --input-border-bottom-left-radius: 0;
+    --input-color-text: var(--grey-10);
+    --input-background-color: var(--grey-00);
+    --input-border-radius: 0;
+    --input-border: 1px solid var(--grey-10-10t);
+    --input-height: 40px;
+    --input-padding-inline: 12px;
+    --input-color-focus-ring: rgba(0, 0, 0, 0.18);
+    --input-color-hover-border: var(--grey-06);
+    --input-background-color-has-value: var(--grey-00);
+
+
+    /* Card Type1*/
+    --cards-background-type1-primary: var(--neon-blue-05-90t);
+    --cards-background-type1-secondary: var(--neon-blue-05-50t);
+    --cards-background-type1-tertiary: var(--neon-blue-05-10t);
+
+    --cards-border-type1-primary: var(--neon-blue-05-90t);
+    --cards-border-type1-secondary: var(--neon-blue-05-50t);
+    --cards-border-type1-tertiary: var(--neon-blue-05-10t);
+
+    --cards-text-color-type1-primary: var(--grey-10);
+    --cards-text-color-type1-secondary: var(--grey-08);
+    --cards-text-color-type1-tertiary: var(--grey-06);
+
+    /* Card Type2*/
+    --cards-background-type2-primary: var(--neon-red-05-90t);
+    --cards-background-type2-secondary: var(--neon-red-05-50t);
+    --cards-background-type2-tertiary: var(--neon-red-05-10t);
+
+    --cards-border-type2-primary: var(--neon-red-05-90t);
+    --cards-border-type2-secondary: var(--neon-red-05-50t);
+    --cards-border-type2-tertiary: var(--neon-red-05-10t);
+
+    --cards-text-color-type2-primary: var(--grey-10);
+    --cards-text-color-type2-secondary: var(--grey-08);
+    --cards-text-color-type2-tertiary: var(--grey-06);
+
+    /* Card Type3*/
+    --cards-background-type3-primary: var(--neon-gold-05-90t);
+    --cards-background-type3-secondary: var(--neon-gold-05-50t);
+    --cards-background-type3-tertiary: var(--neon-gold-05-10t);
+
+    --cards-border-type3-primary: var(--neon-gold-05-90t);
+    --cards-border-type3-secondary: var(--neon-gold-05-50t);
+    --cards-border-type3-tertiary: var(--neon-gold-05-10t);
+
+    --cards-text-color-type3-primary: var(--grey-10);
+    --cards-text-color-type3-secondary: var(--grey-08);
+    --cards-text-color-type3-tertiary: var(--grey-06);
+
+    /* Card Icon Type3*/
+    --cards-icon-background-type3-primary: var(--neon-gold-05);
+
+    /* Overlay */
+    --color-overlay-light: rgba(0, 0, 0, 0.25);
+    --color-overlay-medium: rgba(0, 0, 0, 0.5);
+    --color-overlay-strong: rgba(0, 0, 0, 0.75);
+}

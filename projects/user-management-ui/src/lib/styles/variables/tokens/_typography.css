@@ -1,0 +1,59 @@
+:root {
+   --font-family: "Inter", sans-serif;
+
+   /* Font Sizes */
+
+   --font-size-01: 6px;
+   --font-size-02: 8px;
+   --font-size-03: 10px;
+   --font-size-04: 12px;
+   --font-size-05: 14px;
+   --font-size-06: 16px;
+   --font-size-07: 18px;
+   --font-size-08: 20px;
+   --font-size-09: 22px;
+   --font-size-10: 24px;
+   --font-size-11: 26px;
+   --font-size-12: 28px;
+   --font-size-13: 30px;
+   --font-size-14: 32px;
+   --font-size-15: 34px;
+   --font-size-16: 36px;
+   --font-size-17: 38px;
+   --font-size-18: 40px;
+   --font-size-19: 42px;
+   --font-size-20: 44px;
+   --font-size-21: 46px;
+   --font-size-22: 48px;
+   --font-size-23: 50px;
+   --font-size-24: 52px;
+   --font-size-25: 54px;
+   --font-size-26: 56px;
+   --font-size-27: 58px;
+   --font-size-28: 60px;
+   --font-size-29: 62px;
+   --font-size-30: 64px;
+   --font-size-31: 66px;
+   --font-size-32: 68px;
+   --font-size-33: 70px;
+   --font-size-34: 72px;
+   --font-size-35: 74px;
+   --font-size-36: 76px;
+   --font-size-37: 78px;
+   --font-size-38: 80px;
+   --font-size-39: 82px;
+   --font-size-40: 84px;
+   --font-size-41: 86px;
+   --font-size-42: 88px;
+   --font-size-43: 90px;
+   --font-size-44: 92px;
+   --font-size-45: 94px;
+   --font-size-46: 96px;
+   --font-size-47: 98px;
+   --font-size-48: 100px;
+
+   --font-weight-regular: 400;
+   --font-weight-medium: 500;
+   --font-weight-semibold: 600;
+   --font-weight-bold: 700;
+}

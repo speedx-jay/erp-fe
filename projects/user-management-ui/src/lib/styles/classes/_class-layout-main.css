@@ -1,0 +1,27 @@
+:root {
+
+
+  .akn-erp-layout-main {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100dvh;
+  }
+
+  .akn-erp-layout-main-header {
+    height: var(--main-header-height);
+    background-color: var(--main-background-color-header);
+  }
+
+  .akn-erp-layout-main-main {
+    height: calc(100dvh - var(--main-header-height) - var(--main-footer-height));
+    background-color: var(--main-background-color-main);
+  }
+
+  .akn-erp-layout-main-footer {
+    height: var(--main-footer-height);
+    background-color: var(--main-background-color-footer);
+  }
+
+
+
+}

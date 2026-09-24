@@ -1,0 +1,199 @@
+/* ========================================
+   Main Header
+   ======================================== */
+
+.main-header {
+    position: relative;
+    z-index: 20;
+    width: 100%;
+    /* background:
+        linear-gradient(to right,
+            #ffb800,
+            #fbbf24,
+            #f59e0b); */
+    box-shadow:
+        0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.header-container {
+    width: 100%;
+    /* max-width: 1280px; */
+    height: 80px;
+    margin: 0 auto;
+    padding: 0 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* ========================================
+   Brand
+   ======================================== */
+
+.brand-logo {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.brand-icon {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #121620;
+    color: #fbbf24;
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: -0.025em;
+    box-shadow:
+        0 4px 6px -1px rgba(0, 0, 0, 0.1),
+        0 2px 4px -2px rgba(0, 0, 0, 0.1);
+
+    border: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.brand-name {
+    color: #0f172a;
+    font-size: 24px;
+    font-weight: 900;
+    letter-spacing: -0.025em;
+}
+
+/* ========================================
+   Header Controls
+   ======================================== */
+
+.header-controls {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.header-navigation {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    color: #0f172a;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.header-navigation a {
+    transition: color 0.2s ease;
+}
+
+.header-navigation a:hover {
+    color: #000000;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* ========================================
+   Language Selector
+   ======================================== */
+
+.language-selector {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 14px;
+    border-radius: 9999px;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #0f172a;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    cursor: pointer;
+    backdrop-filter: blur(4px);
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
+}
+
+.language-selector:hover {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.language-icon {
+    width: 14px;
+    height: 14px;
+    opacity: 0.75;
+}
+
+/* ========================================
+   Support
+   ======================================== */
+
+.support-link {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: rgba(15, 23, 42, 0.8);
+    transition:
+        color 0.2s ease,
+        background-color 0.2s ease;
+}
+
+.support-link:hover {
+    color: #020617;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.support-icon {
+    width: 20px;
+    height: 20px;
+}
+
+@media (max-width: 767px) {
+    .header-container {
+        padding: 0 24px;
+    }
+
+    .header-navigation {
+        display: none;
+    }
+
+    .header-controls {
+        gap: 12px;
+    }
+}
+
+@media (max-width: 639px) {
+    .header-container {
+        padding: 0 24px;
+    }
+
+    .brand-icon {
+        width: 42px;
+        height: 42px;
+    }
+
+    .brand-name {
+        font-size: 22px;
+    }
+
+    .language-selector {
+        display: none;
+    }
+}
+
+/* ========================================
+   Small Mobile
+   ======================================== */
+
+@media (max-width: 400px) {
+    .brand-name {
+        font-size: 20px;
+    }
+}

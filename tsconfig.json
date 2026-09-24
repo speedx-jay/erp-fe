@@ -1,0 +1,107 @@
+/* To learn more about Typescript configuration file: https://www.typescriptlang.org/docs/handbook/tsconfig-json.html. */
+/* To learn more about Angular compiler options: https://angular.dev/reference/configs/angular-compiler-options. */
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "strict": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "skipLibCheck": true,
+    "isolatedModules": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "ES2022",
+    "module": "preserve",
+    "paths": {
+      "dashboard-ui": [
+        "./dist/dashboard-ui"
+      ],
+      "user-management-ui": [
+        "./dist/user-management-ui"
+      ]
+    }
+  },
+  "angularCompilerOptions": {
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "strictTemplates": true
+  },
+  "files": [],
+  "references": [
+    {
+      "path": "./tsconfig.app.json"
+    },
+    {
+      "path": "./tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/dashboard/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/dashboard/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/user-management/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/user-management/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/purchasing/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/purchasing/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/inventory/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/inventory/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/sales/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/sales/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/accounting/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/accounting/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/human-resources/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/human-resources/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/reports/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/reports/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/administration/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/administration/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/user-management-ui/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/user-management-ui/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/dashboard-ui/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/dashboard-ui/tsconfig.spec.json"
+    }
+  ]
+}

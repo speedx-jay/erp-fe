@@ -1,0 +1,30 @@
+.akn-login-body {
+  padding-block: 1rem;
+}
+
+.akn-login-input-box {
+  display: grid;
+  grid-template-rows: auto auto;
+}
+
+.akn-login-input-box input {
+  height: 30px;
+  width: 100%;
+  border: 1px solid #ccc;
+}
+
+.akn-login-button {
+  padding-block: 1rem;
+}
+
+akn-erp-button label {
+  cursor: pointer;
+}
+
+.button-login {
+  display: block;
+}
+
+akn-erp-icon-eye-password {
+  display: flex;
+}

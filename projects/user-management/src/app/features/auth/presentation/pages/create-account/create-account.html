@@ -1,0 +1,243 @@
+<!-- BEGIN: MainContent -->
+
+<main class="main-content">
+  <!-- Floating Authentication Card -->
+  <div class="auth-container" data-purpose="auth-container">
+    <div class="auth-card">
+      <!-- Registration Form -->
+      <form class="login-form" [formGroup]="form" (ngSubmit)="onSubmit()">
+        <!-- First Name -->
+        <div data-purpose="input-group-first-name">
+          <label class="input-label" for="firstName"> FIRST NAME </label>
+
+          <div class="input-wrapper">
+            <div class="input-icon">
+              <svg class="form-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M20 21a8 8 0 00-16 0M12 13a4 4 0 100-8 4 4 0 000 8z"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                ></path>
+              </svg>
+            </div>
+
+            <input
+              id="firstName"
+              name="firstName"
+              placeholder="John"
+              type="text"
+              formControlName="firstName"
+            />
+          </div>
+
+          @if (
+            form.controls['firstName'].touched &&
+            form.controls['firstName'].hasError('required')
+          ) {
+            <span class="error-message">
+              First name is required.
+            </span>
+          }
+        </div>
+
+        <!-- Last Name -->
+        <div data-purpose="input-group-last-name">
+          <label class="input-label" for="lastName"> LAST NAME </label>
+
+          <div class="input-wrapper">
+            <div class="input-icon">
+              <svg class="form-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M20 21a8 8 0 00-16 0M12 13a4 4 0 100-8 4 4 0 000 8z"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                ></path>
+              </svg>
+            </div>
+
+            <input
+              id="lastName"
+              name="lastName"
+              placeholder="Doe"
+              type="text"
+              formControlName="lastName"
+            />
+          </div>
+
+          @if (
+            form.controls['lastName'].touched &&
+            form.controls['lastName'].hasError('required')
+          ) {
+            <span class="error-message">
+              Last name is required.
+            </span>
+          }
+        </div>
+
+        <!-- Email -->
+        <div data-purpose="input-group-email">
+          <label class="input-label" for="email"> EMAIL </label>
+
+          <div class="input-wrapper">
+            <div class="input-icon">
+              <svg class="form-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M3 8l9 6 9-6M5 5h14a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2z"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                ></path>
+              </svg>
+            </div>
+
+            <input
+              id="email"
+              name="email"
+              placeholder="you@company.com"
+              type="email"
+              formControlName="email"
+            />
+          </div>
+
+          @if (
+            form.controls['email'].touched &&
+            form.controls['email'].hasError('required')
+          ) {
+            <span class="error-message">
+              Email is required.
+            </span>
+          }
+
+          @if (
+            form.controls['email'].touched &&
+            form.controls['email'].hasError('email')
+          ) {
+            <span class="error-message">
+              Please enter a valid email address.
+            </span>
+          }
+        </div>
+
+        <!-- Password -->
+        <div data-purpose="input-group-password">
+          <label class="input-label" for="password"> PASSWORD </label>
+
+          <div class="input-wrapper">
+            <div class="input-icon">
+              <svg class="form-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                ></path>
+              </svg>
+            </div>
+
+            <input
+              id="password"
+              name="password"
+              placeholder="••••••••••••"
+              type="password"
+              formControlName="password"
+            />
+
+            <!-- Password Eye Toggle -->
+            <button
+              aria-label="Toggle password visibility"
+              class="password-toggle"
+              data-purpose="toggle-password-visibility"
+              id="togglePassword"
+              type="button"
+            >
+              <svg
+                id="eyeIcon"
+                class="eye-icon"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                ></path>
+
+                <path
+                  d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                ></path>
+              </svg>
+            </button>
+          </div>
+
+          @if (
+            form.controls['password'].touched &&
+            form.controls['password'].hasError('required')
+          ) {
+            <span class="error-message">
+              Password is required.
+            </span>
+          }
+        </div>
+
+        <!-- User Image -->
+        <div data-purpose="input-group-user-image">
+          <label class="input-label" for="userImage"> USER IMAGE </label>
+
+          <div class="input-wrapper">
+            <div class="input-icon">
+              <svg class="form-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                ></path>
+              </svg>
+            </div>
+
+            <input
+              id="userImage"
+              name="userImage"
+              placeholder="Image URL"
+              type="text"
+              formControlName="userImage"
+            />
+          </div>
+        </div>
+
+        <!-- Primary Submit Button -->
+        <div class="submit-container">
+          <button class="sign-in-button" type="submit">
+            <span>Create Account</span>
+
+            <svg class="sign-in-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M14 5l7 7m0 0l-7 7m7-7H3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2.5"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </form>
+
+      <!-- Registration Callout -->
+      <div class="registration-callout" data-purpose="registration-callout">
+        <p>
+          Already Have An Account?
+          <a routerLink="/auth/login">Sign-In</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- END: MainContent -->

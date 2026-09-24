@@ -1,0 +1,129 @@
+:root {
+    /* ==========================================
+     GOLD SCALE
+     Base Color: #FCCB05
+     00 = Lightest
+     10 = Darkest
+     ========================================== */
+
+    --gold-00: #fff9d6;
+    --gold-00-10t: #fff9d61a;
+    --gold-00-20t: #fff9d633;
+    --gold-00-30t: #fff9d64d;
+    --gold-00-40t: #fff9d666;
+    --gold-00-50t: #fff9d680;
+    --gold-00-60t: #fff9d699;
+    --gold-00-70t: #fff9d6b3;
+    --gold-00-80t: #fff9d6cc;
+    --gold-00-90t: #fff9d6e6;
+
+    --gold-01: #fff3a3;
+    --gold-01-10t: #fff3a31a;
+    --gold-01-20t: #fff3a333;
+    --gold-01-30t: #fff3a34d;
+    --gold-01-40t: #fff3a366;
+    --gold-01-50t: #fff3a380;
+    --gold-01-60t: #fff3a399;
+    --gold-01-70t: #fff3a3b3;
+    --gold-01-80t: #fff3a3cc;
+    --gold-01-90t: #fff3a3e6;
+
+    --gold-02: #ffe970;
+    --gold-02-10t: #ffe9701a;
+    --gold-02-20t: #ffe97033;
+    --gold-02-30t: #ffe9704d;
+    --gold-02-40t: #ffe97066;
+    --gold-02-50t: #ffe97080;
+    --gold-02-60t: #ffe97099;
+    --gold-02-70t: #ffe970b3;
+    --gold-02-80t: #ffe970cc;
+    --gold-02-90t: #ffe970e6;
+
+    --gold-03: #ffdf3d;
+    --gold-03-10t: #ffdf3d1a;
+    --gold-03-20t: #ffdf3d33;
+    --gold-03-30t: #ffdf3d4d;
+    --gold-03-40t: #ffdf3d66;
+    --gold-03-50t: #ffdf3d80;
+    --gold-03-60t: #ffdf3d99;
+    --gold-03-70t: #ffdf3db3;
+    --gold-03-80t: #ffdf3dcc;
+    --gold-03-90t: #ffdf3de6;
+
+    --gold-04: #fdd625;
+    --gold-04-10t: #fdd6251a;
+    --gold-04-20t: #fdd62533;
+    --gold-04-30t: #fdd6254d;
+    --gold-04-40t: #fdd62566;
+    --gold-04-50t: #fdd62580;
+    --gold-04-60t: #fdd62599;
+    --gold-04-70t: #fdd625b3;
+    --gold-04-80t: #fdd625cc;
+    --gold-04-90t: #fdd625e6;
+
+    --gold-05: #FCCB05;
+    --gold-05-10t: #fccb051a;
+    --gold-05-20t: #fccb0533;
+    --gold-05-30t: #fccb054d;
+    --gold-05-40t: #fccb0566;
+    --gold-05-50t: #fccb0580;
+    --gold-05-60t: #fccb0599;
+    --gold-05-70t: #fccb05b3;
+    --gold-05-80t: #fccb05cc;
+    --gold-05-90t: #fccb05e6;
+
+    --gold-06: #dcb000;
+    --gold-06-10t: #dcb0001a;
+    --gold-06-20t: #dcb00033;
+    --gold-06-30t: #dcb0004d;
+    --gold-06-40t: #dcb00066;
+    --gold-06-50t: #dcb00080;
+    --gold-06-60t: #dcb00099;
+    --gold-06-70t: #dcb000b3;
+    --gold-06-80t: #dcb000cc;
+    --gold-06-90t: #dcb000e6;
+
+    --gold-07: #b89400;
+    --gold-07-10t: #b894001a;
+    --gold-07-20t: #b8940033;
+    --gold-07-30t: #b894004d;
+    --gold-07-40t: #b8940066;
+    --gold-07-50t: #b8940080;
+    --gold-07-60t: #b8940099;
+    --gold-07-70t: #b89400b3;
+    --gold-07-80t: #b89400cc;
+    --gold-07-90t: #b89400e6;
+
+    --gold-08: #947800;
+    --gold-08-10t: #9478001a;
+    --gold-08-20t: #94780033;
+    --gold-08-30t: #9478004d;
+    --gold-08-40t: #94780066;
+    --gold-08-50t: #94780080;
+    --gold-08-60t: #94780099;
+    --gold-08-70t: #947800b3;
+    --gold-08-80t: #947800cc;
+    --gold-08-90t: #947800e6;
+
+    --gold-09: #705b00;
+    --gold-09-10t: #705b001a;
+    --gold-09-20t: #705b0033;
+    --gold-09-30t: #705b004d;
+    --gold-09-40t: #705b0066;
+    --gold-09-50t: #705b0080;
+    --gold-09-60t: #705b0099;
+    --gold-09-70t: #705b00b3;
+    --gold-09-80t: #705b00cc;
+    --gold-09-90t: #705b00e6;
+
+    --gold-10: #4c3d00;
+    --gold-10-10t: #4c3d001a;
+    --gold-10-20t: #4c3d0033;
+    --gold-10-30t: #4c3d004d;
+    --gold-10-40t: #4c3d0066;
+    --gold-10-50t: #4c3d0080;
+    --gold-10-60t: #4c3d0099;
+    --gold-10-70t: #4c3d00b3;
+    --gold-10-80t: #4c3d00cc;
+    --gold-10-90t: #4c3d00e6;
+}

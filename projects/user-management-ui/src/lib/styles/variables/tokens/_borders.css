@@ -1,0 +1,18 @@
+:root {
+
+    --border-radius-circle: 50%;
+
+    --border-radius-small: 4px;
+    --border-radius-medium: 7px;
+    --border-radius-large: 10px;
+
+    --border-thick-thinnest: .25px;
+    --border-thick-thinner: .5px;
+    --border-thick-thin: 1px;
+    --border-thick-thick: 1.5px;
+    --border-thick-thicker: 2px;
+    --border-thick-thickest: 2.5px;
+
+    --border-color-primary: var(--grey-10-10t);
+    --border-color-secondary: var(--grey-10-20t);
+}

@@ -1,0 +1,67 @@
+.forget-password-label {
+  font-family: var(--font-family);
+  color: var(--grey-05);
+  justify-self: self-end;
+  cursor: pointer;
+}
+
+.create-account-label {
+  font-family: var(--font-family);
+  color: var(--grey-05);
+}
+
+.forget-password-label:hover {
+  color: var(--color-text-link);
+}
+
+.create-account-label:hover {
+  color: var(--color-text-link);
+}
+
+.agreement-notes-label {
+  font-size: var(--text-size-05);
+  font-family: var(--font-family);
+  color: var(--color-text-05);
+  letter-spacing: 0.5px;
+  font-weight: 100;
+  text-align: justify;
+  margin: 1rem 0;
+}
+
+.privacy-policy-a,
+.terms-of-service-a {
+  text-decoration: underline;
+}
+
+.privacy-policy-a:hover {
+  color: var(--color-text-link);
+}
+
+.terms-of-service-a:hover {
+  color: var(--color-text-link);
+}
+
+.login-box__create-forget__box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.label-username {
+  font-family: var(--font-family);
+  font-size: var(--font-size-md);
+  color: var(--color-text-04);
+  padding-bottom: 0.2rem;
+  padding-left: 0.1rem;
+  letter-spacing: 1px;
+}
+
+.label-password {
+  font-family: var(--font-family);
+  font-size: var(--font-size-md);
+  color: var(--color-text-04);
+  padding-bottom: 0.2rem;
+  letter-spacing: 1px;
+  padding-left: 0.1rem;
+}
