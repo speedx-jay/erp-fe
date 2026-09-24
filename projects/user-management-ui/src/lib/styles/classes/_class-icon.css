@@ -81,7 +81,7 @@
 .icon--outline .icon__path {
     fill: none;
 
-    stroke: currentColor;
+    stroke: var(--icon-stroke);
     stroke-width: var(--width-line-05, 1px);
 
     stroke-linecap: round;

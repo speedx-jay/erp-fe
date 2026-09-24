@@ -1,0 +1,32 @@
+<span
+  class="icon"
+  [class.icon--filled]="fill === 'filled'"
+  [class.icon--outline]="fill === 'outline'"
+  [class.icon--xxs]="size === 'xxs'"
+  [class.icon--xs]="size === 'xs'"
+  [class.icon--sm]="size === 'sm'"
+  [class.icon--md]="size === 'md'"
+  [class.icon--lg]="size === 'lg'"
+  [class.icon--xl]="size === 'xl'"
+>
+  <svg class="icon__svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Main building -->
+    <path
+      class="icon__path"
+      d="M4 20V8L12 4L20 8V20"
+      stroke="currentColor"
+      stroke-width="1.8"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+
+    <!-- ERP modules -->
+    <rect class="icon__path" x="7" y="10" width="3" height="3" rx="0.5" stroke-width="1.5" />
+
+    <rect class="icon__path" x="14" y="10" width="3" height="3" rx="0.5" stroke-width="1.5" />
+
+    <rect class="icon__path" x="7" y="15" width="3" height="3" rx="0.5" stroke-width="1.5" />
+
+    <rect class="icon__path" x="14" y="15" width="3" height="3" rx="0.5" stroke-width="1.5" />
+  </svg>
+</span>

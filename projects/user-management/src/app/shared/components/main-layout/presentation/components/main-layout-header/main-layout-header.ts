@@ -1,14 +1,14 @@
 import { Component, EventEmitter, inject, Output } from '@angular/core';
 import { Router } from '@angular/router';
 import { MainLayoutService } from '../../../business/main-layout.service';
-import { IconUser } from 'user-management-ui';
+import { IconUser, IconErpLogo } from 'user-management-ui';
 import { AuthState } from '../../../../../../core/state/auth.state';
 import { UserSessionDomain } from '../../../../../../features/auth/models/domain/auth.domain';
 
 @Component({
   selector: 'app-main-layout-header',
   standalone: true,
-  imports: [IconUser],
+  imports: [IconUser, IconErpLogo],
   templateUrl: './main-layout-header.html',
   styleUrl: './main-layout-header.css',
 })

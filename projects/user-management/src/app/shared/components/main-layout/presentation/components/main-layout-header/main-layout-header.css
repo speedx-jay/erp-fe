@@ -14,6 +14,12 @@ icon-user {
     display: flex;
 }
 
+icon-erp-logo {
+    --icon-fill: white;
+    --icon-stroke: white;
+    display: flex;
+}
+
 /* ========================================
    Main Header
    ======================================== */

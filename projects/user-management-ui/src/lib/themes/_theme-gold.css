@@ -41,6 +41,7 @@
     /* Icon */
     --icon-stroke-width: var(--width-line-08);
     --icon-fill: var(--grey-10);
+    --icon-stroke: currentColor;
 
     /* BUTTON BASE */
     --button-min-height: 40px;

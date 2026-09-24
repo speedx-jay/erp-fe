@@ -1,3 +1,9 @@
+icon-erp-logo {
+    --icon-fill: black;
+    --icon-stroke: black;
+    display: flex;
+}
+
 /* ========================================
    Main Header
    ======================================== */
