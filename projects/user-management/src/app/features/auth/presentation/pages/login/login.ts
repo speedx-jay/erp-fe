@@ -36,8 +36,8 @@ export class Login {
     this.authService.login(this.form.value).subscribe({
       next: (response) => {
         console.log(response);
-        localStorage.setItem('accessToken', response.accessToken);
-        localStorage.setItem('refreshToken', response.refreshToken);
+        localStorage.setItem('accessToken', response.data.accessToken);
+        localStorage.setItem('refreshToken', response.data.refreshToken);
         alert('login successfully!');
         this.router.navigate(['/']);
       },

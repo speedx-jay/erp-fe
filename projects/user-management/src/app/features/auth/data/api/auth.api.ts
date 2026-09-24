@@ -3,7 +3,7 @@ import { Injectable, inject } from '@angular/core';
 import { Observable, tap } from 'rxjs';
 
 import { environment } from '../../../../environments/environment';
-import { CreateAccountDomain, LoginDomain, LoginResponse, UserSessionDomain } from '../../models/domain/auth.domain';
+import { CreateAccountDomain, LoginDomain, LoginResponse, LoginResponseDomain, UserSessionDomain } from '../../models/domain/auth.domain';
 
 @Injectable({
   providedIn: 'root',
@@ -29,8 +29,8 @@ export class AuthApi {
       );
   }
 
-  login(data: LoginDomain): Observable<LoginResponse> {
-    return this.http.post<LoginResponse>(`${this.endpoint}api/Users/login`, data);
+  login(data: LoginDomain): Observable<LoginResponseDomain> {
+    return this.http.post<LoginResponseDomain>(`${this.endpoint}api/Users/login`, data);
   }
 
   createAccount(data: CreateAccountDomain): Observable<LoginResponse> {

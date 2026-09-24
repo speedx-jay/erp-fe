@@ -1,7 +1,7 @@
 import { inject, Injectable } from '@angular/core';
 import { map, Observable } from 'rxjs';
 import { AuthApi } from '../api/auth.api';
-import { CreateAccountDomain, LoginDomain, LoginResponse, UserSessionDomain } from '../../models/domain/auth.domain';
+import { CreateAccountDomain, LoginDomain, LoginResponse, LoginResponseDomain, UserSessionDomain } from '../../models/domain/auth.domain';
 
 @Injectable({
   providedIn: 'root',
@@ -9,7 +9,7 @@ import { CreateAccountDomain, LoginDomain, LoginResponse, UserSessionDomain } fr
 export class AuthDataAccess {
   private readonly api = inject(AuthApi);
 
-  login(data: LoginDomain): Observable<LoginResponse> {
+  login(data: LoginDomain): Observable<LoginResponseDomain> {
     return this.api.login(data);
   }
 

@@ -1,7 +1,7 @@
 import { inject, Injectable } from '@angular/core';
 import { Observable, of, tap } from 'rxjs';
 import { AuthDataAccess } from '../data/data-access/auth.data-access';
-import { CreateAccountDomain, LoginDomain, LoginResponse, UserSessionDomain } from '../models/domain/auth.domain';
+import { CreateAccountDomain, LoginDomain, LoginResponse, LoginResponseDomain, UserSessionDomain } from '../models/domain/auth.domain';
 
 @Injectable({
   providedIn: 'root',
@@ -9,7 +9,7 @@ import { CreateAccountDomain, LoginDomain, LoginResponse, UserSessionDomain } fr
 export class AuthService {
   private readonly dataAccess = inject(AuthDataAccess);
 
-  login(data: LoginDomain): Observable<LoginResponse> {
+  login(data: LoginDomain): Observable<LoginResponseDomain> {
     return this.dataAccess.login(data);
   }
 

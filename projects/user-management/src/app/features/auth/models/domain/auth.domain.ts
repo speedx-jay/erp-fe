@@ -1,3 +1,5 @@
+import { ApiResponse } from "../../../../shared/model/api-response";
+
 export interface LoginDomain {
   username: string;
   password: string;
@@ -8,6 +10,8 @@ export interface LoginResponse {
   expiration: string;
   refreshToken: string;
 }
+
+export type LoginResponseDomain = ApiResponse<LoginResponse>;
 
 export interface CreateAccountDomain {
   firstName: string;
