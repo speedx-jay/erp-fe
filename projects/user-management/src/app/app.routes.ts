@@ -18,21 +18,21 @@ export const routes: Routes = [
         path: 'login',
         component: Login,
         data: {
-          title: 'User Management | Login',
+          title: 'ERP | Login',
         },
       },
       {
         path: 'create-account',
         component: CreateAccount,
         data: {
-          title: 'User Management | Create Account',
+          title: 'ERP | Create Account',
         },
       },
       {
         path: 'confirm-email',
         component: ConfirmEmail,
         data: {
-          title: 'User Management | Confirm Email',
+          title: 'ERP | Confirm Email',
         },
       },
     ],
@@ -48,7 +48,7 @@ export const routes: Routes = [
         path: '',
         component: Home,
         data: {
-          title: 'User Management | Home',
+          title: 'ERP | Home',
         },
       },
     ],

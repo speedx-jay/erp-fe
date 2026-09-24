@@ -8,4 +8,6 @@
 @import './variables/tokens/_typography.css';
 @import './variables/tokens/_width.css';
 
-@import "./classes/_class-auth-layout.css";
+@import "./classes/_class-layout-auth.css";
+@import "./classes/_class-layout-main.css";
+@import "./classes/_class-icon.css";

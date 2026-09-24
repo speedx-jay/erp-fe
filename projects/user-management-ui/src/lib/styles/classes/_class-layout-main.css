@@ -10,6 +10,7 @@
   .akn-erp-layout-main-header {
     height: var(--main-header-height);
     background-color: var(--main-background-color-header);
+
   }
 
   .akn-erp-layout-main-main {
@@ -20,6 +21,7 @@
   .akn-erp-layout-main-footer {
     height: var(--main-footer-height);
     background-color: var(--main-background-color-footer);
+    border: 1px solid #8080802e;
   }
 
 

@@ -1,0 +1,120 @@
+/* ========================================
+   Icon
+   ======================================== */
+
+.icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    color: var(--color-icon-primary);
+
+    line-height: 0;
+
+    transition:
+        color 160ms ease,
+        transform 160ms ease;
+}
+
+/* ========================================
+   SVG
+   ======================================== */
+
+.icon__svg {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    overflow: visible;
+}
+
+/* ========================================
+   Size
+   ======================================== */
+
+.icon--xxs {
+    width: 12px;
+    height: 12px;
+}
+
+.icon--xs {
+    width: 18px;
+    height: 18px;
+}
+
+.icon--sm {
+    width: 24px;
+    height: 24px;
+}
+
+.icon--md {
+    width: 36px;
+    height: 36px;
+}
+
+.icon--lg {
+    width: 48px;
+    height: 48px;
+}
+
+.icon--xl {
+    width: 60px;
+    height: 60px;
+}
+
+/* ========================================
+   Filled
+   ======================================== */
+
+.icon--filled .icon__path {
+    fill: var(--icon-fill);
+    stroke: none;
+}
+
+/* ========================================
+   Outline
+   ======================================== */
+
+.icon--outline .icon__path {
+    fill: none;
+
+    stroke: currentColor;
+    stroke-width: var(--width-line-05, 1px);
+
+    stroke-linecap: round;
+    stroke-linejoin: round;
+
+    vector-effect: non-scaling-stroke;
+}
+
+/* ========================================
+   Interaction
+   ======================================== */
+
+.icon:hover {
+    color: var(--color-hover-icon);
+}
+
+.icon:active {
+    color: var(--color-active-icon);
+    transform: scale(0.96);
+}
+
+/* ========================================
+   Reduced Motion
+   ======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .icon,
+    .icon__path {
+        transition: none;
+    }
+
+    .icon:hover .icon__path {
+        transform: none;
+    }
+}

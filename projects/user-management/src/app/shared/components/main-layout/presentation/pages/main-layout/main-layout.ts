@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { AknErpLayoutAuth } from 'user-management-ui';
-import { MainLayoutHeader } from '../../components/main-layout-header/main-layout-header';
+import { AknErpLayoutMain } from 'user-management-ui';
 import { AuthLayoutFooter } from '../../components/auth-layout-footer/auth-layout-footer';
+import { MainLayoutHeader } from '../../components/main-layout-header/main-layout-header';
 
 @Component({
   selector: 'app-main-layout',
-  imports: [AknErpLayoutAuth, MainLayoutHeader],
+  imports: [AknErpLayoutMain, MainLayoutHeader],
   templateUrl: './main-layout.html',
   styleUrl: './main-layout.css',
 })

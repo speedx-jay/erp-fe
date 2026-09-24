@@ -18,7 +18,7 @@
 .header-container {
     width: 100%;
     /* max-width: 1280px; */
-    height: 80px;
+    height: 3.5em;
     margin: 0 auto;
     padding: 0 32px;
     display: flex;
@@ -43,16 +43,13 @@
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    background-color: #121620;
+    background-color: #3e3f40;
     color: #fbbf24;
     font-size: 20px;
     font-weight: 800;
     letter-spacing: -0.025em;
-    box-shadow:
-        0 4px 6px -1px rgba(0, 0, 0, 0.1),
-        0 2px 4px -2px rgba(0, 0, 0, 0.1);
-
-    border: 2px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgb(255 255 255 / 18%);
 }
 
 .brand-name {
@@ -76,7 +73,7 @@
     display: flex;
     align-items: center;
     gap: 32px;
-    color: #0f172a;
+    color: #94a3b8;
     font-size: 14px;
     font-weight: 600;
 }
@@ -87,7 +84,7 @@
 }
 
 .header-navigation p:hover {
-    color: #000000;
+    color: gray;
 }
 
 .header-actions {

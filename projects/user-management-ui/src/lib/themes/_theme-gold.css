@@ -11,12 +11,12 @@
 
 
     /* main-layout */
-    --main-header-height: 80px;
-    --main-footer-height: 75px;
+    --main-header-height: 3.5em;
+    --main-footer-height: 3.5em;
 
-    --main-background-color-header: #48a1c1;
+    --main-background-color-header: var(--grey-10);
     --main-background-color-main: var(--grey-01);
-    --main-background-color-footer: var(--grey-08);
+    --main-background-color-footer: var(--grey-00);
 
     /* Badge */
     --badge-background-color-new: var(--red-06);
