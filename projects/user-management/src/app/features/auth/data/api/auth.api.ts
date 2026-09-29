@@ -3,7 +3,13 @@ import { Injectable, inject } from '@angular/core';
 import { Observable, tap } from 'rxjs';
 
 import { environment } from '../../../../environments/environment';
-import { CreateAccountDomain, LoginDomain, LoginResponse, LoginResponseDomain, UserSessionDomain } from '../../models/domain/auth.domain';
+import {
+  CreateAccountDomain,
+  LoginDomain,
+  LoginResponse,
+  LoginResponseDomain,
+  UserSessionDomain,
+} from '../../models/domain/auth.domain';
 
 @Injectable({
   providedIn: 'root',
@@ -57,6 +63,18 @@ export class AuthApi {
       `${this.endpoint}api/Users/logout`,
       {
         refreshToken,
+      },
+      {
+        responseType: 'text',
+      },
+    );
+  }
+
+  forgotPassword(email: string): Observable<string> {
+    return this.http.post(
+      `${this.endpoint}api/Users/forgot-password`,
+      {
+        email,
       },
       {
         responseType: 'text',

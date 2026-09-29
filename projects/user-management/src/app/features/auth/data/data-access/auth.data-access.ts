@@ -32,4 +32,9 @@ export class AuthDataAccess {
   logout(refreshToken: string): Observable<string> {
     return this.api.logout(refreshToken);
   }
+
+  forgotPassword(email: string): Observable<string> {
+    return this.api.forgotPassword(email);
+  }
+  
 }

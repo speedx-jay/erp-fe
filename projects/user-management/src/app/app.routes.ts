@@ -7,6 +7,7 @@ import { authGuard } from './core/guards/auth.guard';
 import { Title } from '@angular/platform-browser';
 import { CreateAccount } from './features/auth/presentation/pages/create-account/create-account';
 import { ConfirmEmail } from './features/auth/presentation/pages/confirm-email/confirm-email';
+import { ForgotPassword } from './features/auth/presentation/pages/forgot-password/forgot-password';
 
 export const routes: Routes = [
   // Authentication
@@ -33,6 +34,13 @@ export const routes: Routes = [
         component: ConfirmEmail,
         data: {
           title: 'ERP | Confirm Email',
+        },
+      },
+       {
+        path: 'forgot-password',
+        component: ForgotPassword,
+        data: {
+          title: 'ERP | Forgot Password',
         },
       },
     ],
