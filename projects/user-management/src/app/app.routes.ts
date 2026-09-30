@@ -8,6 +8,7 @@ import { Title } from '@angular/platform-browser';
 import { CreateAccount } from './features/auth/presentation/pages/create-account/create-account';
 import { ConfirmEmail } from './features/auth/presentation/pages/confirm-email/confirm-email';
 import { ForgotPassword } from './features/auth/presentation/pages/forgot-password/forgot-password';
+import { ResetPassword } from './features/auth/presentation/pages/reset-password/reset-password';
 
 export const routes: Routes = [
   // Authentication
@@ -43,6 +44,15 @@ export const routes: Routes = [
           title: 'ERP | Forgot Password',
         },
       },
+          {
+        path: 'reset-password',
+        component: ResetPassword,
+        data: {
+          title: 'ERP | Reset Password',
+        },
+      },
+
+      
     ],
   },
 

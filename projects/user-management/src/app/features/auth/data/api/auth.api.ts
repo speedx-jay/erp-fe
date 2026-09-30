@@ -81,4 +81,16 @@ export class AuthApi {
       },
     );
   }
+  resetPassword(token: string, newPassword: string): Observable<string> {
+    return this.http.post(
+      `${this.endpoint}api/Users/reset-password`,
+      {
+        token,
+        newPassword,
+      },
+      {
+        responseType: 'text',
+      },
+    );
+  }
 }

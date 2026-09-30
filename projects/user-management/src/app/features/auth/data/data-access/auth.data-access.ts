@@ -1,7 +1,13 @@
 import { inject, Injectable } from '@angular/core';
 import { map, Observable } from 'rxjs';
 import { AuthApi } from '../api/auth.api';
-import { CreateAccountDomain, LoginDomain, LoginResponse, LoginResponseDomain, UserSessionDomain } from '../../models/domain/auth.domain';
+import {
+  CreateAccountDomain,
+  LoginDomain,
+  LoginResponse,
+  LoginResponseDomain,
+  UserSessionDomain,
+} from '../../models/domain/auth.domain';
 
 @Injectable({
   providedIn: 'root',
@@ -36,5 +42,7 @@ export class AuthDataAccess {
   forgotPassword(email: string): Observable<string> {
     return this.api.forgotPassword(email);
   }
-  
+  resetPassword(token: string, newPassword: string): Observable<string> {
+    return this.api.resetPassword(token, newPassword);
+  }
 }

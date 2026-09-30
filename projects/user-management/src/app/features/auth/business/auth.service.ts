@@ -42,4 +42,8 @@ export class AuthService {
   forgotPassword(email: string): Observable<string> {
     return this.dataAccess.forgotPassword(email);
   }
+
+  resetPassword(token: string, newPassword: string): Observable<string> {
+    return this.dataAccess.resetPassword(token, newPassword);
+  }
 }
